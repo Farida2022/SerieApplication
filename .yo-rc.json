@@ -42,7 +42,9 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Serie"],
+    "lastLiquibaseTimestamp": 1642770205000
   },
   "git-provider": "GitHub",
   "git-company": "Farida2022",
