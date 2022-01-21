@@ -10,7 +10,14 @@
       "fieldType": "Instant"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "saison",
+      "otherEntityRelationshipName": "serie",
+      "relationshipName": "saisons"
+    }
+  ],
   "entityTableName": "serie",
   "dto": "no",
   "pagination": "no",

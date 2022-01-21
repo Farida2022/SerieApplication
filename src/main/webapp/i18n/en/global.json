@@ -8,6 +8,8 @@
       "entities": {
         "main": "Entities",
         "serie": "Serie",
+        "saison": "Saison",
+        "episode": "Episode",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
