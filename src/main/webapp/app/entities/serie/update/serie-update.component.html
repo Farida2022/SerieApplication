@@ -34,6 +34,19 @@
             />
           </div>
         </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="serieApplicationApp.serie.saisons" for="field_saisons">Saisons</label>
+          <select class="form-control" id="field_saisons" data-cy="saisons" name="saisons" formControlName="saisons">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="saisonOption.id === editForm.get('saisons')!.value?.id ? editForm.get('saisons')!.value : saisonOption"
+              *ngFor="let saisonOption of saisonsSharedCollection; trackBy: trackSaisonById"
+            >
+              {{ saisonOption.id }}
+            </option>
+          </select>
+        </div>
       </div>
 
       <div>

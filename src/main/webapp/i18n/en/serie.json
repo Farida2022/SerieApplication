@@ -19,7 +19,8 @@
       },
       "id": "ID",
       "nom": "Nom",
-      "dateHeureAjout": "Date Heure Ajout"
+      "dateHeureAjout": "Date Heure Ajout",
+      "saisons": "Saisons"
     }
   }
 }

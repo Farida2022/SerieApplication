@@ -22,6 +22,12 @@
         <dd>
           <span>{{ serie.dateHeureAjout | formatMediumDatetime }}</span>
         </dd>
+        <dt><span jhiTranslate="serieApplicationApp.serie.saisons">Saisons</span></dt>
+        <dd>
+          <div *ngIf="serie.saisons">
+            <a [routerLink]="['/saison', serie.saisons?.id, 'view']">{{ serie.saisons?.id }}</a>
+          </div>
+        </dd>
       </dl>
 
       <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">

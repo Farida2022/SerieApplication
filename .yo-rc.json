@@ -43,8 +43,8 @@
     "clientThemeVariant": "",
     "reactive": false,
     "enableGradleEnterprise": false,
-    "entities": ["Serie"],
-    "lastLiquibaseTimestamp": 1642770205000
+    "entities": ["Serie", "Saison", "Episode"],
+    "lastLiquibaseTimestamp": 1642770608000
   },
   "git-provider": "GitHub",
   "git-company": "Farida2022",

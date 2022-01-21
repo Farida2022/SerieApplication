@@ -35,6 +35,7 @@
           <th scope="col"><span jhiTranslate="global.field.id">ID</span></th>
           <th scope="col"><span jhiTranslate="serieApplicationApp.serie.nom">Nom</span></th>
           <th scope="col"><span jhiTranslate="serieApplicationApp.serie.dateHeureAjout">Date Heure Ajout</span></th>
+          <th scope="col"><span jhiTranslate="serieApplicationApp.serie.saisons">Saisons</span></th>
           <th scope="col"></th>
         </tr>
       </thead>
@@ -45,6 +46,11 @@
           </td>
           <td>{{ serie.nom }}</td>
           <td>{{ serie.dateHeureAjout | formatMediumDatetime }}</td>
+          <td>
+            <div *ngIf="serie.saisons">
+              <a [routerLink]="['/saison', serie.saisons?.id, 'view']">{{ serie.saisons?.id }}</a>
+            </div>
+          </td>
           <td class="text-right">
             <div class="btn-group">
               <button type="submit" [routerLink]="['/serie', serie.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
