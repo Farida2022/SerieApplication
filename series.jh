@@ -1,0 +1,5 @@
+
+entity Serie {
+	nom String
+    dateHeureAjout Instant
+}
